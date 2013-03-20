@@ -1,0 +1,3 @@
+$(function(){
+    $('.lettering').lettering();
+});

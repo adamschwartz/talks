@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Pixels Matter &mdash; Adam Schwartz &mdash; A HubSpot Tech Talk</title>
+
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+        <!-- Presentation styles -->
+        <link rel="stylesheet" href="css/app.css">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="lib/js/lettering.js"></script>
+
+        <!-- Presentation code -->
+        <script src="js/app.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section>
+                    <h1><span class="lettering spinner">Pixels</span> Matter</h1>
+                    <h3>Designing for the Web</h3>
+                    <p>
+                        <small>
+                            <a href="http://adamschwartz.co" target="_blank">Adam Schwartz</a> &mdash;
+                            <a href="http://twitter.com/adamfschwartz" target="_blank">@adamfschwartz</a>
+                        </small>
+                    </p>
+                </section>
+
+                <section data-state="whiteout" class="whiteout">
+                    <section>
+                        <u></u>
+                        <h3>Pixels don't always behave</h3>
+                        <u></u><u></u>
+                        <h3 style="margin-top: -45px">the way we want them too.</h3>
+                    </section>
+                    <section>
+                        <img class="no-style" src="images/problem-pixels/alignment.png">
+                    </section>
+                    <section>
+                        <img class="no-style" src="images/problem-pixels/blue.png">
+                    </section>
+                    <section>
+                        <img class="no-style" src="images/problem-pixels/responsive.png">
+                    </section>
+                </section>
+
+                <section class="big-every">
+                    <h2 class="lettering spinner">Every</h2>
+                    <h3>inconsistency, incoherence, or inaccuracy</h3>
+                    <h4>detracts from the user experience.</h4>
+                </section>
+
+                <section>
+                    <h2>Just be aware.</h2>
+                </section>
+
+                <section>
+                    <h3>Fixing these problems is often easy...</h3>
+                    <u></u><u></u><u></u>
+                    <h3>...once you learn to identify them.</h3>
+                </section>
+
+                <section>
+                    <u></u>
+                    <h3 class="table-of-contents-item item-active">
+                        <div class="part-prefix">Part I</div>
+                        <div class="part-description">Identifying Problem Pixels</div>
+                    </h3>
+                    <h3 class="table-of-contents-item">
+                        <div class="part-prefix">Part II</div>
+                        <div class="part-description">Fixing Problem Pixels</div>
+                    </h3>
+                    <h3 class="table-of-contents-item">
+                        <div class="part-prefix">Part III</div>
+                        <div class="part-description">Avoiding Problem Pixels from the Start <br/><small style="opacity: 0.5">AKA: How to Be a Designer</small></div>
+                    </h3>
+                </section>
+
+                <section data-state="whiteout" class="whiteout">
+                    <section>
+                        <img class="no-style apple-logo" style="max-width: 400px" src="images/apple/apple-logo.png">
+                    </section>
+                    <section>
+                        <img class="no-style apple-home-page-example" src="images/apple/apple-homepage-march-2013-broken-0.png">
+                    </section>
+                    <section>
+                        <img class="no-style apple-home-page-example" src="images/apple/apple-homepage-march-2013-broken-1.png">
+                    </section>
+                    <section>
+                        <img class="no-style apple-home-page-example" src="images/apple/apple-homepage-march-2013-broken-2.png">
+                    </section>
+                    <section>
+                        <img class="no-style apple-home-page-example" src="images/apple/apple-homepage-march-2013-broken-3.png">
+                    </section>
+                    <section>
+                        <img class="no-style apple-home-page-example" src="images/apple/apple-homepage-march-2013-broken-4.png">
+                    </section>
+                    <section>
+                        <img class="no-style apple-home-page-example" src="images/apple/apple-homepage-march-2013.png">
+                    </section>
+                    <section>
+                        <img class="no-style apple-logo" style="max-width: 400px" src="images/apple/apple-logo.png">
+                    </section>
+                </section>
+
+                <section data-state="whiteout" class="whiteout">
+                    <section>
+                        <h2>What about</h2>
+                        <h3>consistency and accuracy <i>without</i> coherence?</h3>
+                    </section>
+                    <section>
+                        <img class="no-style" src="images/problem-pixels/safari-inspector.png">
+                    </section>
+                    <section>
+                        <img class="no-style" src="images/problem-pixels/gmail-password.png">
+                    </section>
+                </section>
+
+                <section data-state="whiteout" class="whiteout">
+                    <section>
+                        <h3>Problem pixels come in many varieties.</h3>
+                    </section>
+                    <section>
+                        <h3>Alignment of text and containers.</h3>
+                        <img class="no-style" src="images/problem-pixels/alignment.png">
+                    </section>
+                    <section>
+                        <h3>Fonts, aliasing, OS-dependent rendering.</h3>
+                        <img class="no-style" src="images/problem-pixels/aliasing.png">
+                        <h5><code>-webkit-font-smoothing: antialiased</code></h5>
+                    </section>
+                    <section>
+                        <h3>Cursors</h3>
+                        <img class="no-style" src="images/problem-pixels/cursors.png">
+                    </section>
+                    <section>
+                        <h3>Bridge to the OS</h3>
+                        <h4>Border adjacent to browser edge, popup window position, etc.</h4>
+                    </section>
+                    <section>
+                        <h3>URL inconsistencies</h3>
+                        <h4>trailing slash, noun/verb usage, guids vs. ints, dashes vs. underscores</h4>
+                    </section>
+                    <section>
+                        <img class="no-style" src="images/problem-pixels/hubspot-facewall-broken.png">
+                    </section>
+                    <section>
+                        <img class="no-style" src="images/problem-pixels/hubspot-facewall-broken-parts.png">
+                    </section>
+                    <section>
+                        <img class="no-style" src="images/problem-pixels/hubspot-facewall.png">
+                    </section>
+                    <section>
+                        <h3>FOUC, resize glitches, <code>transition: all</code></h3>
+                    </section>
+                    <section>
+                        <h3>Copy, typos, spelling and grammar, voice</h3>
+                        <br/>
+                        <div style="text-align: left; margin-bottom: 0.5em">
+                            <li>API error response messages (back-end devs: these apply to you!)</li>
+                        </div>
+                        <div style="text-align: left; margin-bottom: 0.5em">
+                            <li>Title text, alt text (not just immediately visible copy)</li>
+                        </div>
+                        <div style="text-align: left">
+                            <li>Anything that shows in the status bar (ex: <code>javascript:;</code> href)</li>
+                        </div>
+                    </section>
+                </section>
+
+                <section>
+                    <h3>Aren't these just <i>all</i> possible UI problems?</h3>
+                </section>
+
+                <section>
+                    <h3>
+                        <ul style="line-height: 1.5em">
+                            <li>Prioritize</li>
+                            <li>Don't be paralyzed by complexity #JFDI</li>
+                            <li>Remember it's an iterative process</li>
+                            <li>Periodically reassess priorities</li>
+                        </ul>
+                    </h3>
+                </section>
+
+                <section>
+                    <h3>Enlist others</h3>
+                    <br/>
+                    <div style="text-align: left; margin-bottom: 0.5em">
+                        <li>Share screencasts with others and they'll identify problems for you</li>
+                    </div>
+                    <div style="text-align: left; margin-bottom: 0.5em">
+                        <li>Gate to Super Users or Beta Users to get early feedback</li>
+                    </div>
+                    <div style="text-align: left; margin-bottom: 0.5em">
+                        <li>Selenium, User testing, etc.</li>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Just be aware.</h2>
+                </section>
+
+                <section>
+                    <u></u>
+                    <h3 class="table-of-contents-item item-done">
+                        <div class="part-prefix">Part I</div>
+                        <div class="part-description">Identifying Problem Pixels</div>
+                    </h3>
+                    <h3 class="table-of-contents-item item-active">
+                        <div class="part-prefix">Part II</div>
+                        <div class="part-description">Fixing Problem Pixels</div>
+                    </h3>
+                    <h3 class="table-of-contents-item">
+                        <div class="part-prefix">Part III</div>
+                        <div class="part-description">Avoiding Problem Pixels from the Start <br/><small style="opacity: 0.5">AKA: Some Basic Design Lessons</small></div>
+                    </h3>
+                </section>
+
+                <section>
+                    <h2>
+                        <blockquote>
+                            If there is something <br/>
+                            you can do to change it, <br/>
+                            then you own it.
+                        </blockquote>
+                    </h2>
+                    <h2>
+                        <author>
+                            Me<!-- No whitespace please
+                         --><br/>
+                            <small><a href="https://twitter.com/adamfschwartz/status/313903460720451584">Source</a></small>
+                        </author>
+                    </h2>
+                </section>
+
+                <section>
+                    <h3>Learn your tools</h3>
+                    <br/>
+                    <div style="text-align: left; margin-bottom: 0.5em">
+                        <li>Chrome inspector <span style="float: right;">⌘ + ⌥ + I</span></li>
+                    </div>
+                    <div style="text-align: left; margin-bottom: 0.5em">
+                        <li>Zoom screen <span style="float: right;">⌘ + scroll wheel</span></li>
+                    </div>
+                    <div style="text-align: left">
+                        <li>Use the screenshot tool to check alignment <span style="float: right;">⌘ + SHIFT + 4</span></li>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Fixing Problem Pixels</h2>
+                    <h3><a target="_blank" href="http://jsfiddle.net/adamschwartz/NtX5F">Workshop</a></h3>
+                    <h4>http://tinyurl.com/tech-talk-pixel-tests</h4>
+                </section>
+
+                <section>
+                    <u></u>
+                    <h3 class="table-of-contents-item item-done">
+                        <div class="part-prefix">Part I</div>
+                        <div class="part-description">Identifying Problem Pixels</div>
+                    </h3>
+                    <h3 class="table-of-contents-item item-done">
+                        <div class="part-prefix">Part II</div>
+                        <div class="part-description">Fixing Problem Pixels</div>
+                    </h3>
+                    <h3 class="table-of-contents-item item-active">
+                        <div class="part-prefix">Part III</div>
+                        <div class="part-description">Avoiding Problem Pixels from the Start <br/><small style="opacity: 0.5">AKA: Some Basic Design Lessons</small></div>
+                    </h3>
+                </section>
+
+                <section>
+                    <h2>Principle of Least Astonishment</h2>
+                    <br/>
+                    <h2>
+                        <blockquote>...exploit users' pre-existing knowledge as a way to minimize the learning curve....</blockquote>
+                    </h2>
+                    <h2>
+                        <author><a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment">Wikipedia</a></author>
+                    </h2>
+                </section>
+
+                <section>
+                    <u></u>
+                    <div style="margin: 0 auto; width: 350px; text-align: left;">
+                        <h2>Consistency</h2>
+                    </div>
+                    <div style="margin: 0 auto; width: 350px; text-align: left;">
+                        <h2>Coherence</h2>
+                    </div>
+                    <div style="margin: 0 auto; width: 350px; text-align: left;">
+                        <h2>Accuracy</h2>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>We face additional challenges as we scale.</h3>
+                </section>
+
+                <section>
+                    <h2>
+                        <blockquote>Mo Pixels Mo Problems</blockquote>
+                    </h2>
+                    <h2>
+                        <author>Notorious B.I.G.</author>
+                    </h2>
+                </section>
+
+                <section>
+                    <h2>Centralized Repositories</h2>
+                    <br/>
+                    <h3><code>style_guide</code></h3>
+                    <h3><code>hubspot_public_assets</code></h3>
+                </section>
+
+                <section>
+                    <h2>
+                        <blockquote>I never met a pull request I didn't like.</blockquote>
+                    </h2>
+                    <h2>
+                        <author>Any Developer at HubSpot</author>
+                    </h2>
+                </section>
+
+                <section>
+                    <h2>Just be aware.</h2>
+                </section>
+
+                <section>
+                    <h2>#JFDI</h2>
+                </section>
+
+                <section>
+                    <h1 class="ui-phrase">
+                        <span class="prefix">Pixels make</span>
+                        <span class="phrase">
+                            <span>a Website</span>
+                            <span>a Design</span>
+                            <span>an App</span>
+                            <span>Art</span>
+                        </span>
+                    </h1>
+                </section>
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: 'night', // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>

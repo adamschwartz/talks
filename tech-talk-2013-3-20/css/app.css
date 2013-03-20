@@ -1,0 +1,296 @@
+/* Section stuff */
+
+section > * {
+    opacity: 0;
+}
+
+section.past > *:not(section) {
+    opacity: 1;
+}
+
+section.present > *:not(section) {
+    -webkit-animation: dropin 1.6s;
+    -webkit-animation-delay: 1.8s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+section.future > *:not(section) {
+    opacity: 1;
+}
+
+section.present > :not(section):nth-child(1) {
+    -webkit-animation: none;
+    opacity: 1;
+}
+
+section.present > :not(section):nth-child(2) { -webkit-animation-delay: 0.8s }
+section.present > :not(section):nth-child(3) { -webkit-animation-delay: 1.0s }
+section.present > :not(section):nth-child(4) { -webkit-animation-delay: 1.2s }
+section.present > :not(section):nth-child(5) { -webkit-animation-delay: 1.4s }
+section.present > :not(section):nth-child(6) { -webkit-animation-delay: 1.6s }
+
+section :first-child {
+    -webkit-animation-delay: 0.2s
+}
+
+@-webkit-keyframes dropin {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px)
+    }
+
+    20%, 100% {
+        opacity: 1;
+        -webkit-transform: translateY(0px)
+    }
+}
+
+/* Reveal Overrides */
+
+.reveal section img.no-style {
+    box-shadow: none;
+    border: 0;
+    background: transparent;
+}
+
+.reveal section.whiteout * {
+    color: #444;
+}
+
+.reveal h2 blockquote {
+    font-style: normal;
+    line-height: 1.15em;
+    text-align: left;
+    padding: 30px;
+}
+
+.reveal h2 blockquote:before, .reveal h2 blockquote:after {
+    position: absolute;
+    font-size: 300px;
+}
+
+.reveal h2 blockquote:before {
+    left: -140px;
+    top: 90px;
+}
+
+.reveal h2 blockquote:after {
+    right: -140px;
+    bottom: -35px;
+}
+
+.reveal h2 author {
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 130px;
+    opacity: 0.6;
+    font-size: 80%;
+}
+
+.reveal h2 author:before {
+    content: "\2014 ";
+}
+
+/* More states */
+
+.whiteout .reveal .state-background {
+    background: rgba( 255, 255, 255, 1 );
+}
+
+/* Lettering stuff */
+
+.lettering.spinner span {
+    background: rgb(254, 87, 34);
+    color: #fff;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    display: inline-block;
+    -webkit-animation: rotate 8s infinite;
+}
+
+.lettering.spinner span:first-child {
+    padding-left: 4px;
+}
+
+.lettering.spinner span:last-child {
+    padding-right: 12px;
+}
+
+.lettering.spinner .char1 { -webkit-animation-delay: 0.2s }
+.lettering.spinner .char2 { -webkit-animation-delay: 0.4s }
+.lettering.spinner .char3 { -webkit-animation-delay: 0.6s }
+.lettering.spinner .char4 { -webkit-animation-delay: 0.8s }
+.lettering.spinner .char5 { -webkit-animation-delay: 1.0s }
+.lettering.spinner .char6 { -webkit-animation-delay: 1.2s }
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotateX(0deg);
+    }
+
+    20%, 100% {
+        -webkit-transform: rotateX(360deg);
+    }
+}
+
+/* Table of Contents */
+
+h1 + h3.table-of-contents-item {
+    margin-top: 1em;
+}
+
+section h3.table-of-contents-item {
+    width: 100%;
+    line-height: 1.2em;
+}
+
+.table-of-contents-item .part-prefix {
+    width: 33%;
+    text-align: right;
+    float: left;
+    opacity: 0.5;
+    clear: left;
+    padding-right: 1em;
+    margin-bottom: 0.5em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.table-of-contents-item .part-description {
+    width: 67%;
+    text-align: left;
+    float: left;
+}
+
+.table-of-contents-item.item-done * {
+    text-decoration: line-through;
+}
+
+.table-of-contents-item * {
+    color: #888;
+}
+
+.table-of-contents-item.item-active * {
+    color: #fff;
+}
+
+/* UI Phrase */
+
+.ui-phrase > span {
+    display: inline-block;
+    font-size: 100px;
+    height: 120px;
+    line-height: 100px;
+}
+
+.ui-phrase .prefix {
+    opacity: 0.5;
+}
+
+.ui-phrase .phrase {
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+    top: 33px;
+}
+
+.ui-phrase .phrase > span {
+    display: block;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.present > .ui-phrase .phrase > span {
+    -webkit-animation: ui-phrase-cycle 3s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes ui-phrase-cycle {
+    0%, 20% {
+        -webkit-transform: translateY(0px)
+    }
+
+    30%, 50% {
+        -webkit-transform: translateY(-120px)
+    }
+
+    60%, 80% {
+        -webkit-transform: translateY(-240px)
+    }
+
+    90%, 100% {
+        -webkit-transform: translateY(-360px)
+    }
+}
+
+/* Apple examples */
+
+.reveal section img.apple-home-page-example {
+    margin-top: -10px;
+}
+
+.reveal section img.apple-logo {
+    -webkit-transition: -webkit-filter 1.6s ease-in-out 1s;
+    -webkit-filter: grayscale(1);
+}
+
+.reveal section.present > img.apple-logo {
+    -webkit-filter: grayscale(0);
+}
+
+@-webkit-keyframes ui-phrase-cycle {
+    0%, 20% {
+        -webkit-transform: translateY(0px)
+    }
+
+    30%, 50% {
+        -webkit-transform: translateY(-120px)
+    }
+
+    60%, 80% {
+        -webkit-transform: translateY(-240px)
+    }
+
+    90%, 100% {
+        -webkit-transform: translateY(-360px)
+    }
+}
+
+/* Every */
+
+.reveal section.big-every * {
+    white-space: nowrap;
+}
+
+.reveal section.big-every .lettering.spinner span {
+    padding-bottom: 30px;
+}
+
+.reveal section.big-every .lettering.spinner .char4 {
+    padding-right: 4px;
+}
+
+.reveal section.big-every .lettering.spinner .char5 {
+    padding-left: 3px;
+}
+
+.reveal section.big-every h2 {
+    font-size: 120px;
+    margin-top: -18px;
+    text-align: left;
+    margin-left: -60px;
+    float: left;
+    margin-right: 30px;
+}
+
+.reveal section.big-every h3 {
+    font-size: 42px;
+    text-align: left;
+}
+
+.reveal section.big-every h4 {
+    font-size: 50px;
+    margin-top: -6px;
+    text-align: left;
+}
