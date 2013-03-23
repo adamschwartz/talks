@@ -134,6 +134,18 @@
     }
 }
 
+/* Fragments */
+
+.absolute-fragments {
+    position: relative;
+}
+
+.absolute-fragments .absolute-fragment {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /* Table of Contents */
 
 h1 + h3.table-of-contents-item {
@@ -235,8 +247,10 @@ section h3.table-of-contents-item {
 
 /* Apple examples */
 
-.reveal section img.apple-home-page-example {
-    margin-top: -10px;
+.reveal div.apple-home-page-examples {
+    width: 857px;
+    height: 741px;
+    margin: -50px auto 0;
 }
 
 .reveal section img.apple-logo {
