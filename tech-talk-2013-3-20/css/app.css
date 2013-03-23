@@ -248,24 +248,6 @@ section h3.table-of-contents-item {
     -webkit-filter: grayscale(0);
 }
 
-@-webkit-keyframes ui-phrase-cycle {
-    0%, 20% {
-        -webkit-transform: translateY(0px)
-    }
-
-    30%, 50% {
-        -webkit-transform: translateY(-120px)
-    }
-
-    60%, 80% {
-        -webkit-transform: translateY(-240px)
-    }
-
-    90%, 100% {
-        -webkit-transform: translateY(-360px)
-    }
-}
-
 /* Every */
 
 .reveal section.big-every * {
