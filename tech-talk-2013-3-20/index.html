@@ -17,12 +17,18 @@
         <link rel="stylesheet" href="css/reveal.min.css">
         <link rel="stylesheet" href="css/theme/night.css" id="theme">
 
+        <!-- Support webkit only styles -->
+        <script>
+            if (/ chrome/i.test(navigator.userAgent)) {
+                document.documentElement.className = 'webkit'
+            }
+        </script>
+
         <!-- Presentation styles -->
         <link rel="stylesheet" href="css/app.css">
 
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
-
 
         <!-- If the query includes 'print-pdf', use the PDF print sheet -->
         <script>

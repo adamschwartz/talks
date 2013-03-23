@@ -1,35 +1,35 @@
 /* Section stuff */
 
-section > * {
+.webkit section > * {
     opacity: 0;
 }
 
-section.past > *:not(section) {
+.webkit section.past > *:not(section) {
     opacity: 1;
 }
 
-section.present > *:not(section) {
+.webkit section.present > *:not(section) {
     -webkit-animation: dropin 1.6s;
     -webkit-animation-delay: 1.8s;
     -webkit-animation-fill-mode: forwards;
 }
 
-section.future > *:not(section) {
+.webkit section.future > *:not(section) {
     opacity: 1;
 }
 
-section.present > :not(section):nth-child(1) {
+.webkit section.present > :not(section):nth-child(1) {
     -webkit-animation: none;
     opacity: 1;
 }
 
-section.present > :not(section):nth-child(2) { -webkit-animation-delay: 0.8s }
-section.present > :not(section):nth-child(3) { -webkit-animation-delay: 1.0s }
-section.present > :not(section):nth-child(4) { -webkit-animation-delay: 1.2s }
-section.present > :not(section):nth-child(5) { -webkit-animation-delay: 1.4s }
-section.present > :not(section):nth-child(6) { -webkit-animation-delay: 1.6s }
+.webkit section.present > :not(section):nth-child(2) { -webkit-animation-delay: 0.8s }
+.webkit section.present > :not(section):nth-child(3) { -webkit-animation-delay: 1.0s }
+.webkit section.present > :not(section):nth-child(4) { -webkit-animation-delay: 1.2s }
+.webkit section.present > :not(section):nth-child(5) { -webkit-animation-delay: 1.4s }
+.webkit section.present > :not(section):nth-child(6) { -webkit-animation-delay: 1.6s }
 
-section :first-child {
+.webkit section :first-child {
     -webkit-animation-delay: 0.2s
 }
 
@@ -154,6 +154,7 @@ section h3.table-of-contents-item {
     padding-right: 1em;
     margin-bottom: 0.5em;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -176,6 +177,14 @@ section h3.table-of-contents-item {
 }
 
 /* UI Phrase */
+
+.ui-phrase {
+    display: none;
+}
+
+.webkit .ui-phrase {
+    display: block;
+}
 
 .ui-phrase > span {
     display: inline-block;
