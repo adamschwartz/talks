@@ -1,0 +1,7 @@
+- define and examples of cac
+- set the stakes - set up problems at beginning (gap logo, something from tech)
+- "just be aware" => "just be aware because it all matters" (conceptually)
+- principle of least astonishment up front (also more tie in to cac)
+- icons for cac (consistency / acuracy / coherence) and a *consistent* ordering
+- example of cac in the workshop
+- "next steps" ending instead of hubspot ending (twitter bootstrap, other toolkits, code editors like sublime, etc.)
